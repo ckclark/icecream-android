@@ -18,10 +18,10 @@ public class IcecreamCursorAdapter extends CursorAdapter {
         TextView addrTv = (TextView) view.findViewById(R.id.addr);
 
         if(nameTv != null) {
-            nameTv.setText(cursor.getString(ProviderHelper.DISPLAY_NAME_IDX));
+            nameTv.setText(cursor.getString(ProviderHelper.NAME_IDX));
         }
         if(addrTv != null) {
-            addrTv.setText(cursor.getString(ProviderHelper.ADDRESS_IDX));
+            addrTv.setText(cursor.getString(ProviderHelper.ADDR_IDX));
         }
     }
 
